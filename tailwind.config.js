@@ -16,7 +16,8 @@ export default {
       },
       colors: {
         "green": "#38adc2",
-        "pink": "#f08080"
+        "pink": "#f08080",
+        "dark": "#272727"
       }
     },
   },
