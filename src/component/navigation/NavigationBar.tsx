@@ -4,9 +4,9 @@ import { NavigationButton } from "./NavigationButton";
 
 export const NavigationBar : React.FC = () => {
     return (
-        <div className="w-full flex content-center justify-between px-2 py-1 border-b-green border-opacity-50 border-b-2">
+        <div className="w-full flex content-center justify-between px-4 py-2">
             <WebsiteTitle/>
-            <div className="flex">
+            <div className="flex opacity-10 hover:opacity-100 duration-700">
                 <NavigationButton buttonText="About"/>
                 <NavigationButton buttonText="Projects"/>
                 <NavigationButton buttonText="Resume"/>

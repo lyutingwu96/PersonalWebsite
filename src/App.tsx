@@ -3,7 +3,9 @@ import { NavigationBar } from "./component/navigation/NavigationBar"
 function App() {
 
   return (
-    <NavigationBar/>
+    <div className="h-screen bg-[#272727]">
+      <NavigationBar/>
+    </div>
   )
 }
 
