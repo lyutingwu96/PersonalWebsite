@@ -1,8 +1,9 @@
+import { NavigationBar } from "./component/navigation/NavigationBar"
 
 function App() {
 
   return (
-    <div>Test</div>
+    <NavigationBar/>
   )
 }
 
