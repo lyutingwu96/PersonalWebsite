@@ -29,7 +29,7 @@ export default {
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0 },
-          '45%': { opacity: 1000 },
+          '45%': { opacity: 100 },
           '60%': { opacity: 100 },
           '95%': { opacity: 0 },
           '100%': { opacity: 0 },
