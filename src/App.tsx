@@ -2,7 +2,9 @@ import { useState } from "react"
 import { LandingAnimation } from "./component/about/LandingAnimation"
 import { NavigationBar } from "./component/navigation/NavigationBar"
 import { About } from "./component/about/About";
-
+import lozad from 'lozad';
+const observer = lozad();
+    observer.observe();
 
 function App() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -25,3 +27,4 @@ function App() {
 }
 
 export default App
+observer.observe();

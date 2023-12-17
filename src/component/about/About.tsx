@@ -1,11 +1,8 @@
 import * as React from "react";
 
-import lozad from 'lozad';
 import profile from "../../assets/profile.jpeg"
 
 export const About: React.FC = () => {
-    const observer = lozad();
-    observer.observe();
 
   return (
     <div className="animate-fadeIn">
