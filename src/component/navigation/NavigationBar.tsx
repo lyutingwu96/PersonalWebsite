@@ -5,18 +5,15 @@ import { useState } from 'react';
 import {WebsiteTitle} from "./WebsiteTitle";
 import { NavigationButton } from "./NavigationButton";
 import burgurMenu from "../../assets/burgerMenu.svg"
-import lozad from 'lozad';
 
 export const NavigationBar : React.FC = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
-    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-    observer.observe();
 
     return (
         <div className="w-full flex content-center justify-between px-4 pt-2 pb-1 fixed top-0 animate-fadeIn">
             <WebsiteTitle/>
             <div className="sm:hidden">
-                <img src={burgurMenu} alt="" className="w-[28px] h-full self-center lozad" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
+                <img src={burgurMenu} alt="" className="w-[28px] h-full self-center" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
                 {isMenuVisible && <div className="absolute top-12 right-2 grid justify-items-end" >
                     <NavigationButton buttonText="About"/>
                     <NavigationButton buttonText="Projects"/>

@@ -1,13 +1,17 @@
 import * as React from "react";
+
+import lozad from 'lozad';
 import profile from "../../assets/profile.jpeg"
 
 export const About: React.FC = () => {
+    const observer = lozad();
+    observer.observe();
 
   return (
     <div className="animate-fadeIn">
         <div className={`w-fit mx-auto mt-[120px] sm:flex sm:items-center sm:h-screen sm:mt-0 sm:justify-center`}>
             <div className="w-[200px] h-[200px] sm:min-w-[220px] sm:min-h-[220px] sm:w-[220px] sm:h-[220px] mx-auto rounded-full overflow-clip relative shadow-[3px_5px_0px_0px] shadow-green">
-                <img src={profile} className="scale-[1.3] absolute top-5 right-2"/>
+                <img src={profile} className="scale-[1.3] absolute top-5 right-2 lozad"/>
             </div>
             <div className="w-[80%] mx-auto sm:w-[70%] sm:max-w-[500px] mt-[60px] sm:ml-[60px] sm:mr-[30px] sm:mt-0">
                 <div className="font-title text-md text-green mb-2 ">Hi! I'm Lyu-Ting!</div>
