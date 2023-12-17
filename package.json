@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/lozad": "^1.16.4",
     "lottie-react": "^2.4.0",
+    "lozad": "^1.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
