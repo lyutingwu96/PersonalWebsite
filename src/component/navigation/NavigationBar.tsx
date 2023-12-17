@@ -10,7 +10,7 @@ export const NavigationBar : React.FC = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     return (
-        <div className="w-full flex content-center justify-between px-4 pt-2 pb-1 fixed top-0">
+        <div className="w-full flex content-center justify-between px-4 pt-2 pb-1 fixed top-0 animate-fadeIn">
             <WebsiteTitle/>
             <div className="sm:hidden">
                 <img src={burgurMenu} alt="" className="w-[28px] h-full self-center" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
@@ -20,7 +20,7 @@ export const NavigationBar : React.FC = () => {
                     <NavigationButton buttonText="Resume"/>
                 </div>}
             </div>
-            <div className="hidden sm:flex opacity-10 hover:opacity-100 duration-700">
+            <div className="hidden sm:flex opacity-20 hover:opacity-100 duration-700">
                 <NavigationButton buttonText="About"/>
                 <NavigationButton buttonText="Projects"/>
                 <NavigationButton buttonText="Resume"/>

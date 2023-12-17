@@ -8,10 +8,10 @@ export default {
     extend: {
       fontFamily: {
         title: ["Expletus Sans", "Arial"],
-        content: ["Raleway", "Arial"]
+        content: ["Poppins"]
       },
       fontSize: {
-        md:"16px",
+        md:["16px", "18px"],
         lg:"24px",
         xl: "28px"
       },
@@ -21,12 +21,12 @@ export default {
         "dark": "#272727"
       },
       animation: {
-        fadeText: 'fadeInText 2000ms ease-in-out',
+        fadeIn: 'fadeIn 2000ms ease-in-out',
       },
 
       // that is actual animation
       keyframes: {
-        fadeInText: {
+        fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 100 },
         },
