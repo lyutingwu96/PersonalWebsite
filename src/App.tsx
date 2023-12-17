@@ -5,10 +5,10 @@ import { NavigationBar } from "./component/navigation/NavigationBar"
 
 function App() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
-
+  
   return (
     <div className=" w-screen  relative">
-      <NavigationBar/>
+      {isAnimationComplete && <NavigationBar/>}
       <div className="w-screen min-h-screen flex justify-center items-center">
         {isAnimationComplete && <div className="animated-fadeText fixed mx-auto text-transparent bg-clip-text text-center self-center font-title bg-gradient-to-r from-pink from-[20%] to-green">
             Thank you for visiting.<br/>Website build-in-progress.

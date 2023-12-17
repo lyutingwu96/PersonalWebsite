@@ -10,9 +10,11 @@ export interface LandingAnimationProps {
 
 export const LandingAnimation : React.FC<LandingAnimationProps> = ({setAnimationComplete}) => {
     const [isHidden, setIsHidden] = useState("")
-    const animationData = window.innerWidth < 400 ? landingAnimationData_Phone : landingAnimationData;
+
+    const animationData = window.innerWidth > 640 ? landingAnimationData : landingAnimationData_Phone;
     return (
-        <div className={`w-screen min-h-screen flex justify-center items-center animate-fade ${isHidden} bg-dark`}>
+        <div className={`w-screen max-h-screen overflow-clip flex justify-center items-center
+        ${isHidden} bg-dark`}>
             <Lottie style={{width:'100vw'}} animationData={animationData} loop={false} onComplete={()=>{
                 setIsHidden("hidden");
                 setAnimationComplete(true);
