@@ -6,7 +6,7 @@ export const About: React.FC = () => {
 
   return (
     <div className="animate-fadeIn">
-        <div className={`w-fit mx-auto mt-[120px] sm:flex sm:items-center sm:h-screen sm:mt-0 sm:justify-center`}>
+        <div className="w-fit mx-auto my-[120px] sm:flex sm:items-center sm:h-screen sm:my-0 sm:justify-center">
             <div className="w-[200px] h-[200px] sm:min-w-[220px] sm:min-h-[220px] sm:w-[220px] sm:h-[220px] mx-auto rounded-full overflow-clip relative shadow-[3px_5px_0px_0px] shadow-green">
                 <img src={profile} className="scale-[1.3] absolute top-5 right-2 lozad"/>
             </div>
