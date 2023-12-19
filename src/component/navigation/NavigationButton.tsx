@@ -5,10 +5,11 @@ interface NavigationBtnProps {
     buttonText: string,
     path: string,
     isActive: boolean,
-    activePageHandler: React.Dispatch<React.SetStateAction<string>>
+    activePageHandler: React.Dispatch<React.SetStateAction<string>>,
+    menuVisibilityHandler: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export const NavigationButton : React.FC<NavigationBtnProps> = ({buttonText, path, isActive, activePageHandler} ) => {
+export const NavigationButton : React.FC<NavigationBtnProps> = ({buttonText, path, isActive, activePageHandler, menuVisibilityHandler} ) => {
   const activeStyle = "text-pink decoration-solid underline "
   const inactiveStyle = "text-green ";
   const commonStyle = `text-lg font-title font-medium 
@@ -16,8 +17,14 @@ export const NavigationButton : React.FC<NavigationBtnProps> = ({buttonText, pat
                         hover:text-pink hover:decoration-solid hover:underline duration-700`
 
   const style = isActive ? activeStyle + commonStyle : inactiveStyle + commonStyle
+
+  function linkOnClickHandler() {
+    activePageHandler(buttonText)
+    menuVisibilityHandler(false)
+  }
+
   return (
-    <Link to={path} onClick={()=>activePageHandler(buttonText)} className={style}>
+    <Link to={path} onClick={linkOnClickHandler} className={style}>
         {buttonText}
     </Link>
   )

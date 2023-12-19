@@ -16,15 +16,15 @@ export const NavigationBar : React.FC = () => {
             <div className="sm:hidden">
                 <img src={burgurMenu} alt="" className="w-[28px] h-full self-center" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
                 {isMenuVisible && <div className="absolute top-12 right-2 grid justify-items-end" >
-                    <NavigationButton buttonText={routeNames.ABOUT} path="/" isActive={activePage==`${routeNames.ABOUT}`} activePageHandler={setActivePage}/>
-                    <NavigationButton buttonText={routeNames.PROJECTS} path="/projects" isActive={activePage==`${routeNames.PROJECTS}`} activePageHandler={setActivePage}/>
-                    <NavigationButton buttonText={routeNames.RESUME} path="/resume" isActive={activePage==`${routeNames.RESUME}`} activePageHandler={setActivePage}/>
+                    <NavigationButton buttonText={routeNames.ABOUT} path="/" isActive={activePage==`${routeNames.ABOUT}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
+                    <NavigationButton buttonText={routeNames.PROJECTS} path="/projects" isActive={activePage==`${routeNames.PROJECTS}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
+                    <NavigationButton buttonText={routeNames.RESUME} path="/resume" isActive={activePage==`${routeNames.RESUME}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
                 </div>}
             </div>
             <div className="hidden sm:flex opacity-20 hover:opacity-100 duration-700">
-                <NavigationButton buttonText={routeNames.ABOUT} path="/" isActive={activePage==`${routeNames.ABOUT}`} activePageHandler={setActivePage}/>
-                <NavigationButton buttonText={routeNames.PROJECTS} path="/projects" isActive={activePage==`${routeNames.PROJECTS}`} activePageHandler={setActivePage}/>
-                <NavigationButton buttonText={routeNames.RESUME} path="/resume" isActive={activePage==`${routeNames.RESUME}`} activePageHandler={setActivePage}/>
+                <NavigationButton buttonText={routeNames.ABOUT} path="/" isActive={activePage==`${routeNames.ABOUT}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
+                <NavigationButton buttonText={routeNames.PROJECTS} path="/projects" isActive={activePage==`${routeNames.PROJECTS}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
+                <NavigationButton buttonText={routeNames.RESUME} path="/resume" isActive={activePage==`${routeNames.RESUME}`} activePageHandler={setActivePage} menuVisibilityHandler={setIsMenuVisible}/>
             </div>
         </div>
     )
