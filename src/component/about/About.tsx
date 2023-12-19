@@ -17,7 +17,7 @@ export const About: React.FC = () => {
                 </div>
                 <div className="font-content text-md text-[#CCCCCC] mb-4 font-light">
                     I have 3 years of professional experience. I work mostly on front-end development,
-                     but also have experineces designing projects from scratch and implementing the UI on my own.</div>
+                     but also have experiences designing UI from scratch and implementing it on my own.</div>
 
                 <div className="font-content text-md text-[#CCCCCC]  font-light">
                     During my free time, I dedicate myself to digital painting. I have been 
