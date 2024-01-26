@@ -5,6 +5,7 @@ import { About } from "./component/about/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import lozad from 'lozad';
 import { BuildInProgress } from "./component/navigation/BuildInProgress";
+import { Projects } from "./component/projects/Projects";
 const observer = lozad();
     observer.observe();
 
@@ -17,7 +18,8 @@ function App() {
         {isAnimationComplete &&
           <Routes>
               <Route path="/" element={<About/>}/>
-              <Route path="/projects" element={<BuildInProgress/>}/>
+              <Route path="/projects" element={<Projects/>}/>
+              <Route path="/projects/healthear" element={<BuildInProgress/>}/>
               <Route path="/resume" element={<BuildInProgress/>}/>
           </Routes>
         }
