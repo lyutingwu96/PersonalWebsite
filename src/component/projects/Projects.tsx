@@ -10,7 +10,7 @@ export const Projects: React.FC = () => {
         <div className="w-fit mx-auto my-[120px] lg:my-[220px]">
             <div className="gap-8 lg:gap-16 grid ">
             {/* lg:grid-cols-2 */}
-                <ProjectCard bannerImg={healthEarLogo} hoverImg={healthEarPhoto} path="/projects/healthear"/>
+                <ProjectCard bannerImg={healthEarPhoto} hoverImg={healthEarLogo} path="/projects/healthear"/>
 
             </div>
         </div>
