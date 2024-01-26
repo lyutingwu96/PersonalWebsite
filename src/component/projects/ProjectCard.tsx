@@ -10,9 +10,9 @@ export interface ProjectCardProps {
 export const ProjectCard: React.FC<ProjectCardProps> = ({bannerImg, hoverImg, path}) => {
   return (
     <Link to={path} className="w-[280px] h-[300px] sm:w-[480px] relative hover:-skew-y-1 cursor-pointer duration-700 ">
-        <div className="w-[calc(98%)] h-[calc(98%)] rounded-[5px] border-2 border-pink flex justify-center items-center overflow-hidden duration-700 absolute top-6 left-6 opacity-60">
+        {/* <div className="w-[calc(98%)] h-[calc(98%)] rounded-[5px] border-2 border-pink flex justify-center items-center overflow-hidden duration-700 absolute top-6 left-6 opacity-60">
 
-        </div>
+        </div> */}
     
         <div className="w-full h-full rounded-[5px] border-2 border-green flex justify-center items-center overflow-hidden duration-700 bg-dark">
             <div className="w-[calc(95%)] h-[calc(92%)] rounded-[3px] overflow-hidden relative hover:w-full hover:h-full  duration-700"> 
