@@ -11,7 +11,7 @@ export const About: React.FC = () => {
                 <img src={profile} className="scale-[1.3] absolute top-5 right-2 lozad"/>
             </div>
             <div className="w-[80%] mx-auto sm:w-[70%] sm:max-w-[500px] mt-[60px] sm:ml-[60px] sm:mr-[30px] sm:mt-0">
-                <div className="font-title text-md text-green mb-2 ">Hi! I'm Lyu-Ting!</div>
+                <div className="font-title text-lg text-green mb-2 ">Hi! I'm Lyu-Ting!</div>
                 <div className="font-content text-md text-light mb-4 font-light">
                     I'm a software engineer that is enthusiastic about both <div className="text-pink inline-block">tech</div> and <div className="text-green inline-block"> art</div>.
                 </div>

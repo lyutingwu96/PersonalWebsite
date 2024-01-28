@@ -14,7 +14,7 @@ export const LandingAnimation : React.FC<LandingAnimationProps> = ({setAnimation
     const animationData = window.innerWidth > 640 ? landingAnimationData : landingAnimationData_Phone;
     return (
         <div className={`w-screen h-[100svh] overflow-clip flex justify-center items-center
-        ${isHidden} bg-dark`}>
+        ${isHidden} bg-[url('./src/assets/denim.png')]`}>
             <Lottie style={{width:'100vw'}} animationData={animationData} loop={false} onComplete={()=>{
                 setIsHidden("hidden");
                 setAnimationComplete(true);
