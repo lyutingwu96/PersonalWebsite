@@ -16,14 +16,14 @@ export const Projects: React.FC = () => {
                     hoverImg={healthEarLogo}
                     projectTitle="HealthEar"
                     projectDescription="Middle ear infection acoustic screening app for children."
-                    tags={["Developer", "UI/UX Designer", "React Native"]}
+                    tags={["Developer", "UI Designer", "React Native"]}
                     path="/projects/HealthEar"/>
                 <ProjectCard 
                     bannerImg={exiTurtlePhoto} 
                     hoverImg={exiTurtleLogo}
                     projectTitle="ExiTurtle"
                     projectDescription="A serious game for children with ADHD."
-                    tags={["Developer", "UI/UX Designer", "Unity 3D"]}
+                    tags={["Developer", "UI Designer", "Unity 3D"]}
                     path="/projects/HealthEar"/>
             </div>
         </div>
