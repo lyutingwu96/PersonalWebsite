@@ -11,6 +11,7 @@ export default {
         content: ["Poppins"]
       },
       fontSize: {
+        sm:["12px"],
         md:["16px", "18px"],
         lg:"24px",
         xl: "28px"
@@ -18,7 +19,8 @@ export default {
       colors: {
         "green": "#38adc2",
         "pink": "#f08080",
-        "dark": "#272727"
+        "dark": "#272727",
+        "light": "#CCCCCC"
       },
       animation: {
         fadeIn: 'fadeIn 2000ms ease-in-out',
