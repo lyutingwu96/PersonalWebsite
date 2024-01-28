@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import lozad from 'lozad';
 import { BuildInProgress } from "./component/navigation/BuildInProgress";
 import { Projects } from "./component/projects/Projects";
+
 const observer = lozad();
     observer.observe();
 

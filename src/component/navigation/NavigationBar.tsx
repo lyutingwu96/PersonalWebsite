@@ -10,7 +10,7 @@ export const NavigationBar : React.FC = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     return (
-        <div className="w-full flex content-center justify-between px-4 pt-2 pb-1 fixed top-0 animate-fadeIn bg-[url('./public/assets/denim.png')]">
+        <div className="w-full flex content-center justify-between px-4 pt-2 pb-1 fixed top-0 animate-fadeIn bg-[url('/assets/denim.png')]">
             <WebsiteTitle/>
             <div className="sm:hidden">
                 <img src={burgurMenu} alt="" className="w-[28px] h-full self-center" onClick={()=>setIsMenuVisible(!isMenuVisible)}/>
