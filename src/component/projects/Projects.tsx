@@ -9,7 +9,7 @@ import exiTurtleLogo from "../../assets/exiTurtle/exiTurtleLogo.png"
 export const Projects: React.FC = () => {
   return (
     <div className="animate-fadeIn">
-        <div className="w-fit mx-auto my-[120px] lg:mt-[120px] lg:mb-[120px]">
+        <div className="w-fit mx-auto my-[120px]">
             <div className="gap-12 lg:gap-16 grid lg:grid-cols-2">
                 <ProjectCard 
                     bannerImg={healthEarPhoto} 
