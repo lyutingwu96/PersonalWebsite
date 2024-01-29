@@ -1,2 +1,5 @@
 export * from "./Projects"
 export * from "./ProjectCard"
+export * from "./HealthEar"
+export * from "./ProjectImage"
+export * from "./Tag"
