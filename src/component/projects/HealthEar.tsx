@@ -5,7 +5,7 @@ import { Tag } from "../../uikit/Tag";
 export const HealthEar: React.FC = () => {
   return (
     <div className="animate-fadeIn">
-      <div className="w-[calc(90%)] mx-auto px-8 my-[120px]">
+      <div className="w-full md:w-[calc(90%)] mx-auto px-8 my-[120px] font-light">
         <div className="mb-8">
           <div className="mb-4 lg:mb-8">
             <div className="font-title text-xl font-bold text-green mb-4">
@@ -38,7 +38,7 @@ export const HealthEar: React.FC = () => {
               </div>
             </div>
             <div className="lg:flex lg:gap-8">
-              <div className="lg:w-[calc(40%)]">
+              <div className="lg:min-w-[280px]">
                 <div className="mb-4 md:mb-2">
                   <div className="font-title text-lg text-green font-800">
                     Skills
@@ -85,7 +85,7 @@ export const HealthEar: React.FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </div>
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink from-[20%] to-green font-content w-fit mx-auto mt-16">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink from-[20%] to-green font-title w-fit mx-auto mt-16">
           Project details coming soon.
         </div>
       </div>

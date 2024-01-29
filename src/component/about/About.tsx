@@ -12,7 +12,7 @@ export const About: React.FC = () => {
             className="scale-[1.3] absolute top-5 right-2 lozad"
           />
         </div>
-        <div className="w-[80%] mx-auto sm:w-[70%] sm:max-w-[500px] mt-[60px] sm:ml-[60px] sm:mr-[30px] sm:mt-0">
+        <div className="w-[80%] mx-auto sm:w-[70%] sm:max-w-[550px] mt-[60px] sm:ml-[60px] sm:mr-[30px] sm:mt-0">
           <div className="font-title text-lg text-green mb-2 ">
             Hi! I'm Lyu-Ting!
           </div>
