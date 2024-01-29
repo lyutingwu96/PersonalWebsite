@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { Tag } from "./Tag";
+import { Tag } from "../../uikit/Tag";
 import { ProjectImage } from "./ProjectImage";
 
 export interface ProjectCardProps {
@@ -36,7 +36,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="gap-[6px] justify-end absolute bottom-2 right-2 flex-wrap-reverse flex">
           {tags.map((tag) => (
-            <Tag tag={tag} />
+            <Tag>{tag}</Tag>
           ))}
         </div>
       </div>
