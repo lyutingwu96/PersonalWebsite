@@ -22,9 +22,10 @@ export const About: React.FC = () => {
             <div className="text-green inline-block"> art</div>.
           </div>
           <div className="font-content text-md text-light mb-4 font-light">
-            I have 3 years of professional experience. I work mostly on
-            front-end development, but also have experiences designing UI from
-            scratch and implementing it on my own.
+            I work mostly on front-end development and also have experiences
+            designing UI from scratch and implementing it on my own. It is
+            always satisfying to see how designs are transformed into working UI
+            elements pixel by pixel, step by step.
           </div>
 
           <div className="font-content text-md text-light  font-light">
